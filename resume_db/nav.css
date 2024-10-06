@@ -1,0 +1,51 @@
+  /* Navigation Bar */
+        nav {
+            background-color: #0077b6;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .nav-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-left: 20px;
+            background: linear-gradient(135deg, #ff007f, #ff4f4f, #ff7f00, #ffaf00, #00ff15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            animation: fadeIn 1.5s ease-out;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.4), 3px 3px 0 rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.5px;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-name:hover {
+            transform: scale(1.2);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 20px;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            padding-bottom: 5px;
+        }
+
+        nav a:hover {
+            color: aqua;
+        }
+
+        nav a.active {
+            color: #1b0768;
+            border-bottom: 2px solid #caf0f8;
+        }

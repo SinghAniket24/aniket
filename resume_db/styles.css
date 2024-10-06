@@ -1,0 +1,53 @@
+:root {
+    --background-color: #1b0637;
+    --text-color: #fff;
+    --primary-color: #0077b6;
+    --highlight-color: #00bfff;
+    --secondary-text-color: #ddd;
+    --h1-color: #fff;
+    --h2-color: #ddd;
+    --h3-color: #aaa;
+    --p-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--h1-color);
+}
+
+h2 {
+    color: var(--h2-color);
+}
+
+h3 {
+    color: var(--h3-color);
+}
+
+p {
+    color: var(--p-color);
+}
+
+.color-scheme-selector {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    color: var(--text-color);
+}
+
+.color-scheme-selector select {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1em;
+    cursor: pointer;
+}
